@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comic Strip Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #comic-form {
+            margin: 20px auto;
+        }
+
+        .panel {
+            margin-bottom: 10px;
+        }
+
+        .panel label {
+            display: block;
+        }
+
+        .panel textarea {
+            width: 100%;
+        }
+
+        #generate-button {
+            margin-top: 10px;
+        }
+
+        #comic-panels {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .comic-panel {
+            margin: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comic Strip Generator</h1>
+    <form id="comic-form">
+        <h2>Enter text for 10 panels:</h2>
+        <div class="panel">
+            <label for="panel1">Panel 1:</label>
+            <textarea id="panel1" name="panel1" rows="3" cols="40" placeholder="Enter text for panel 1"></textarea>
+        </div>
+        <div class="panel">
+            <label for="panel2">Panel 2:</label>
+            <textarea id="panel2" name="panel2" rows="3" cols="40" placeholder="Enter text for panel 2"></textarea>
+        </div>
+        <div class="panel">
+            <label for="panel3">Panel 3:</label>
+            <textarea id="panel3" name="panel3" rows="3" cols="40" placeholder="Enter text for panel 3"></textarea>
+        </div>
+        <div class="panel">
+            <label for="panel4">Panel 4:</label>
+            <textarea id="panel4" name="panel4" rows="3" cols="40" placeholder="Enter text for panel 4"></textarea>
+        </div>
+        <div class="panel">
+            <label for="panel5">Panel 5:</label>
+            <textarea id="panel5" name="panel5" rows="3" cols="40" placeholder="Enter text for panel 5"></textarea>
+        </div>
+        <div class="panel">
+            <label for="panel6">Panel 6:</label>
+            <textarea id="panel6" name="panel6" rows="3" cols="40" placeholder="Enter text for panel 6"></textarea>
+        </div>
+        <div class="panel">
+            <label for="panel7">Panel 7:</label>
+            <textarea id="panel7" name="panel7" rows="3" cols="40" placeholder="Enter text for panel 7"></textarea>
+        </div>
+        <div class="panel">
+            <label for="panel8">Panel 8:</label>
+            <textarea id="panel8" name="panel8" rows="3" cols="40" placeholder="Enter text for panel 8"></textarea>
+        </div>
+        <div class="panel">
+            <label for="panel9">Panel 9:</label>
+            <textarea id="panel9" name="panel9" rows="3" cols="40" placeholder="Enter text for panel 9"></textarea>
+        </div>
+        <div class="panel">
+            <label for="panel10">Panel 10:</label>
+            <textarea id="panel10" name="panel10" rows="3" cols="40" placeholder="Enter text for panel 10"></textarea>
+        </div>
+
+        <button id="generate-button">Generate Comic</button>
+    </form>
+    <div id="comic-panels" class="hidden"></div>
+    <div id="error-message" class="hidden"></div>
+</body>
+<script src="script.js"></script>
+</html>
